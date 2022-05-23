@@ -20,7 +20,6 @@
 		678CA05A2839CFB7008A3351 /* HomeFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */; };
 		678CA05C2839D055008A3351 /* HomeFlowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */; };
 		678CA05E2839D336008A3351 /* HomeFlowPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */; };
-		678CA0622839FD42008A3351 /* BaseControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA0612839FD42008A3351 /* BaseControllerType.swift */; };
 		678CA066283AC637008A3351 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA064283AC637008A3351 /* ListViewController.swift */; };
 		678CA067283AC637008A3351 /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 678CA065283AC637008A3351 /* ListViewController.xib */; };
 		678CA06B283ACED0008A3351 /* CustomNavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678CA06A283ACED0008A3351 /* CustomNavigationControllers.swift */; };
@@ -93,7 +92,6 @@
 		678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowRouter.swift; path = ListProductMeliApp/Module/Entity/HomeFlowRouter.swift; sourceTree = SOURCE_ROOT; };
 		678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowInteractor.swift; path = ListProductMeliApp/Module/Entity/HomeFlowInteractor.swift; sourceTree = SOURCE_ROOT; };
 		678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowPresenterProtocol.swift; path = ListProductMeliApp/Module/Entity/HomeFlowPresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
-		678CA0612839FD42008A3351 /* BaseControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseControllerType.swift; path = ListProductMeliApp/Module/Core/Services/BaseControllerType.swift; sourceTree = SOURCE_ROOT; };
 		678CA064283AC637008A3351 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		678CA065283AC637008A3351 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		678CA06A283ACED0008A3351 /* CustomNavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllers.swift; sourceTree = "<group>"; };
@@ -260,14 +258,6 @@
 			path = Module;
 			sourceTree = "<group>";
 		};
-		67751CBC2839724500D32836 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				678CA0612839FD42008A3351 /* BaseControllerType.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
 		67751CBD2839725100D32836 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -403,7 +393,6 @@
 			isa = PBXGroup;
 			children = (
 				67B9FD74283998A80046A02D /* Services */,
-				67751CBC2839724500D32836 /* Util */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -696,7 +685,6 @@
 				678CA066283AC637008A3351 /* ListViewController.swift in Sources */,
 				67B9FD782839A4A60046A02D /* HomeWidgetSearch.swift in Sources */,
 				678CA077283AD5F2008A3351 /* ListDeatilCell.swift in Sources */,
-				678CA0622839FD42008A3351 /* BaseControllerType.swift in Sources */,
 				67751C8B28396BAB00D32836 /* AppDelegate.swift in Sources */,
 				678CA072283AD36D008A3351 /* Extensions.swift in Sources */,
 				67751CC7283991AC00D32836 /* HomeViewController.swift in Sources */,

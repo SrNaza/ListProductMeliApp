@@ -43,7 +43,6 @@ extension HomeFlowRouter {
     }
     
     func showItemsCollection(infoResult: [WidgetResult], presenter: HomeFlowPresenterProtocol) {
-        print("Func showItemsCollection Prompt")
         let viewController = ListViewController(result: infoResult, presenter: presenter)
         baseController?.navigationController?.pushViewController(viewController, animated: true)
     }

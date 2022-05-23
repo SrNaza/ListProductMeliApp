@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol DetailViewControllerTestable {
-    func setupAccert()
-}
-
 class DetailViewController: UIViewController {
     
     @IBOutlet weak var conditionAndQuantityLabel: UILabel!

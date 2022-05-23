@@ -28,11 +28,6 @@ class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        let interactor = HomeFlowInteractor()
-//        let router = HomeFlowRouter(baseController: self)
-//        presenter = HomeFlowPresenter(interactor: interactor, router: router)
-        
-        
     }
 }
 

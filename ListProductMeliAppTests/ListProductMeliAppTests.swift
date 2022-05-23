@@ -117,9 +117,3 @@ class ListProductMeliAppTests: XCTestCase {
     }
     
 }
-
-extension ListProductMeliAppTests: DetailViewControllerTestable {
-    func setupAccert() {
-        XCTAssertTrue(true, "Textfield shouldn't be empty")
-    }
-}
