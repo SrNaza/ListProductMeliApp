@@ -1,5 +1,5 @@
 # List Product Meli App
-Meli app Tech Test / NAzareth Villalba
+Meli app Tech Test / Nazareth Villalba
 
 arquitectura usada clean arquitecrue
 
