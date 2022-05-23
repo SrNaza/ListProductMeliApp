@@ -88,10 +88,10 @@
 		67751CAD28396BAC00D32836 /* ListProductMeliAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListProductMeliAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67751CC5283991AC00D32836 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67751CC6283991AC00D32836 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		678CA0572839CE39008A3351 /* HomeFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowPresenter.swift; path = ListProductMeliApp/Module/Entity/HomeFlowPresenter.swift; sourceTree = SOURCE_ROOT; };
-		678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowRouter.swift; path = ListProductMeliApp/Module/Entity/HomeFlowRouter.swift; sourceTree = SOURCE_ROOT; };
-		678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowInteractor.swift; path = ListProductMeliApp/Module/Entity/HomeFlowInteractor.swift; sourceTree = SOURCE_ROOT; };
-		678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowPresenterProtocol.swift; path = ListProductMeliApp/Module/Entity/HomeFlowPresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
+		678CA0572839CE39008A3351 /* HomeFlowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowPresenter.swift; path = ListProductMeliApp/Module/Presenter/HomeFlowPresenter.swift; sourceTree = SOURCE_ROOT; };
+		678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowRouter.swift; path = ListProductMeliApp/Module/Router/HomeFlowRouter.swift; sourceTree = SOURCE_ROOT; };
+		678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowInteractor.swift; path = ListProductMeliApp/Module/Interactor/HomeFlowInteractor.swift; sourceTree = SOURCE_ROOT; };
+		678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeFlowPresenterProtocol.swift; path = ListProductMeliApp/Module/Presenter/HomeFlowPresenterProtocol.swift; sourceTree = SOURCE_ROOT; };
 		678CA064283AC637008A3351 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		678CA065283AC637008A3351 /* ListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
 		678CA06A283ACED0008A3351 /* CustomNavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllers.swift; sourceTree = "<group>"; };
@@ -249,10 +249,10 @@
 			isa = PBXGroup;
 			children = (
 				67B9FD73283998950046A02D /* Core */,
-				67751CC22839727A00D32836 /* Router */,
 				67751CC02839726500D32836 /* Entity */,
-				67751CBF2839725F00D32836 /* Presenter */,
-				67751CBE2839725900D32836 /* Interactor */,
+				67934355283C55A700FCA6AA /* Router */,
+				67934354283C559900FCA6AA /* Presenter */,
+				67934353283C558300FCA6AA /* Interactor */,
 				67751CBD2839725100D32836 /* View */,
 			);
 			path = Module;
@@ -269,23 +269,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		67751CBE2839725900D32836 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		67751CBF2839725F00D32836 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				678CA0572839CE39008A3351 /* HomeFlowPresenter.swift */,
-				678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
 		67751CC02839726500D32836 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,14 +282,6 @@
 				67B9FD852839AE610046A02D /* InfoAttributes.swift */,
 			);
 			path = Entity;
-			sourceTree = "<group>";
-		};
-		67751CC22839727A00D32836 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		67751CC32839913900D32836 /* Launch */ = {
@@ -387,6 +362,31 @@
 				67934343283B1FF500FCA6AA /* DetailViewController.xib */,
 			);
 			path = DetailSection;
+			sourceTree = "<group>";
+		};
+		67934353283C558300FCA6AA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				678CA05B2839D055008A3351 /* HomeFlowInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		67934354283C559900FCA6AA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				678CA0572839CE39008A3351 /* HomeFlowPresenter.swift */,
+				678CA05D2839D336008A3351 /* HomeFlowPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67934355283C55A700FCA6AA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				678CA0592839CFB7008A3351 /* HomeFlowRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		67B9FD73283998950046A02D /* Core */ = {
