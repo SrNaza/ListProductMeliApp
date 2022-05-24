@@ -79,7 +79,6 @@ class ListProductMeliAppTests: XCTestCase {
                     print("Tratando de mostrar algo")
                 })
                 
-//                XCTAssertEqual(!info.results.isEmpty, true, "Textfield shouldn't be empty")
                 transitionExpectation.fulfill()
         }).disposed(by: disposeBag)
     
