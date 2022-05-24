@@ -67,7 +67,7 @@ class ListProductMeliAppTests: XCTestCase {
     func testNotifyTransition() {
         let transitionExpectation = expectation(description: "should get coupon active")
         
-        let detailInfo = homePresenter?.getItemsDetail(itemToSearch: "Toallas")
+        let detailInfo = homePresenter?.getItemsDetail(itemToSearch: "Mouses")
             .asObservable()
         
         detailInfo?.asObservable()
@@ -75,7 +75,9 @@ class ListProductMeliAppTests: XCTestCase {
             .subscribe(onNext: { [weak self] info in
                 guard let self = self, let infoResult = info.results.first else { return }
                 
-                let notify = self.homePresenter.notifyTransition(transition: .showItemsSearchDetail(item: infoResult), completion: nil)
+                self.homePresenter.notifyTransition(transition: .showItemsSearchDetail(item: infoResult), completion: {
+                    print("Tratando de mostrar algo")
+                })
                 
 //                XCTAssertEqual(!info.results.isEmpty, true, "Textfield shouldn't be empty")
                 transitionExpectation.fulfill()

@@ -24,7 +24,6 @@ class HomeFlowInteractor {
             AF.request(url).responseObject { (response: DataResponse<HomeWidgetSearch, AFError>) in
                 switch response.result {
                 case .success(let result):
-                    print(result.toJSONString() ?? "")
                     return single(.success(result))
                 case .failure(let error):
                     print(error.errorDescription ?? "")
